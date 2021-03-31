@@ -2,21 +2,19 @@ import arcpy
 import pythonaddins
 import os
 
-#relPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-#toolbox = relPath + r"\GeMS_ToolsArc105.tbx"
-toolbox = r"D:\GitHub\gems-tools-arcmap-forked\GeMS_ToolsArc105.tbx"
+relPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+toolbox = relPath + r"\GeMS_ToolsArc105.tbx"
 
 class ButtonClassAtttributeByKeyValue(object):
-    """Implementation for Esri_Addin_addin.buttonAtttributeByKeyValue (Button)"""
+    """Implementation for Esri_Addin_addin.button.AtttributeByKeyValue (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
     def onClick(self):
         pythonaddins.GPToolDialog(toolbox, "AttributeByKeyValues")
 
-
 class ButtonClassCompactBackup(object):
-    """Implementation for Esri_Addin_addin.buttonCompactBackup (Button)"""
+    """Implementation for Esri_Addin_addin.button.CompactBackup (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -24,7 +22,7 @@ class ButtonClassCompactBackup(object):
         pass
 
 class ButtonClassCreateNewDatabase(object):
-    """Implementation for Esri_Addin_addin.buttonCreateNewDatabase (Button)"""
+    """Implementation for Esri_Addin_addin.button.CreateNewDatabase (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -32,7 +30,7 @@ class ButtonClassCreateNewDatabase(object):
         pass
 
 class ButtonClassDMUDocx(object):
-    """Implementation for Esri_Addin_addin.buttonDMUDocx (Button)"""
+    """Implementation for Esri_Addin_addin.button.DMUDocx (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -40,7 +38,7 @@ class ButtonClassDMUDocx(object):
         pass
 
 class ButtonClassDeplanarizeCAF(object):
-    """Implementation for Esri_Addin_addin.buttonDeplanarizeCAF (Button)"""
+    """Implementation for Esri_Addin_addin.button.DeplanarizeCAF (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -48,7 +46,7 @@ class ButtonClassDeplanarizeCAF(object):
         pass
 
 class ButtonClassDocxDMU(object):
-    """Implementation for Esri_Addin_addin.buttonDocxToDMU (Button)"""
+    """Implementation for Esri_Addin_addin.button.DocxToDMU (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -56,7 +54,7 @@ class ButtonClassDocxDMU(object):
         pass
 
 class ButtonClassFixStrings(object):
-    """Implementation for Esri_Addin_addin.buttonFixStrings (Button)"""
+    """Implementation for Esri_Addin_addin.button.FixStrings (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -64,7 +62,7 @@ class ButtonClassFixStrings(object):
         pass
 
 class ButtonClassGeologicNamesCheck(object):
-    """Implementation for Esri_Addin_addin.buttonGeologicNamesCheck (Button)"""
+    """Implementation for Esri_Addin_addin.button.GeologicNamesCheck (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -72,7 +70,7 @@ class ButtonClassGeologicNamesCheck(object):
         pass
 
 class ButtonClassInclinationNumbers(object):
-    """Implementation for Esri_Addin_addin.buttonInclinationNumbers (Button)"""
+    """Implementation for Esri_Addin_addin.button.InclinationNumbers (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -80,7 +78,7 @@ class ButtonClassInclinationNumbers(object):
         pass
 
 class ButtonClassMakePolygons(object):
-    """Implementation for Esri_Addin_addin.buttonMakePolygons (Button)"""
+    """Implementation for Esri_Addin_addin.button.MakePolygons (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -88,7 +86,7 @@ class ButtonClassMakePolygons(object):
         pass
 
 class ButtonClassMakeTopology(object):
-    """Implementation for Esri_Addin_addin.buttonMakeTopology (Button)"""
+    """Implementation for Esri_Addin_addin.button.MakeTopology (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -96,7 +94,7 @@ class ButtonClassMakeTopology(object):
         pass
 
 class ButtonClassMapOutline(object):
-    """Implementation for Esri_Addin_addin.buttonMapOutline (Button)"""
+    """Implementation for Esri_Addin_addin.button.MapOutline (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -104,7 +102,7 @@ class ButtonClassMapOutline(object):
         pass
 
 class ButtonClassProjectMapData(object):
-    """Implementation for Esri_Addin_addin.buttonProjectMapData (Button)"""
+    """Implementation for Esri_Addin_addin.button.ProjectMapData (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -112,7 +110,7 @@ class ButtonClassProjectMapData(object):
         pass
 
 class ButtonClassProjectPoints(object):
-    """Implementation for Esri_Addin_addin.buttonProjectPoints (Button)"""
+    """Implementation for Esri_Addin_addin.button.ProjectPoints (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -120,7 +118,7 @@ class ButtonClassProjectPoints(object):
         pass
 
 class ButtonClassPurgeMetadata(object):
-    """Implementation for Esri_Addin_addin.buttonPurgeMetadata (Button)"""
+    """Implementation for Esri_Addin_addin.button.PurgeMetadata (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -128,7 +126,7 @@ class ButtonClassPurgeMetadata(object):
         pass
 
 class ButtonClassRelationshipClasses(object):
-    """Implementation for Esri_Addin_addin.buttonRelationshipClasses (Button)"""
+    """Implementation for Esri_Addin_addin.button.RelationshipClasses (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -136,7 +134,7 @@ class ButtonClassRelationshipClasses(object):
         pass
 
 class ButtonClassSetIDvalues(object):
-    """Implementation for Esri_Addin_addin.buttonSetIDvalues (Button)"""
+    """Implementation for Esri_Addin_addin.button.SetIDvalues (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -144,7 +142,7 @@ class ButtonClassSetIDvalues(object):
         pass
 
 class ButtonClassSetPlotAtScaleValues(object):
-    """Implementation for Esri_Addin_addin.buttonSetPlotAtScaleValues (Button)"""
+    """Implementation for Esri_Addin_addin.button.SetPlotAtScaleValues (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -152,7 +150,7 @@ class ButtonClassSetPlotAtScaleValues(object):
         pass
 
 class ButtonClassSetSymbolValues(object):
-    """Implementation for Esri_Addin_addin.buttonSetSymbolValues (Button)"""
+    """Implementation for Esri_Addin_addin.button.SetSymbolValues (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -160,7 +158,7 @@ class ButtonClassSetSymbolValues(object):
         pass
 
 class ButtonClassSymbolToRGB(object):
-    """Implementation for Esri_Addin_addin.buttonSymbolToRGB (Button)"""
+    """Implementation for Esri_Addin_addin.button.SymbolToRGB (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -168,7 +166,7 @@ class ButtonClassSymbolToRGB(object):
         pass
 
 class ButtonClassTopologyCheck(object):
-    """Implementation for Esri_Addin_addin.buttonTopologyCheck (Button)"""
+    """Implementation for Esri_Addin_addin.button.TopologyCheck (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -176,7 +174,7 @@ class ButtonClassTopologyCheck(object):
         pass
 
 class ButtonClassTranslateToShapefiles(object):
-    """Implementation for Esri_Addin_addin.buttonTranslateToShapefiles (Button)"""
+    """Implementation for Esri_Addin_addin.button.TranslateToShapefiles (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -184,7 +182,7 @@ class ButtonClassTranslateToShapefiles(object):
         pass
 
 class ButtonClassValidateDatabase(object):
-    """Implementation for Esri_Addin_addin.buttonValidateDatabase (Button)"""
+    """Implementation for Esri_Addin_addin.button.ValidateDatabase (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
@@ -192,7 +190,7 @@ class ButtonClassValidateDatabase(object):
         pass
 
 class ToolClassFGDC1(object):
-    """Implementation for Esri_Addin_addin.toolFGDC1 (Tool)"""
+    """Implementation for Esri_Addin_addin.tool.FGDC1 (Tool)"""
     def __init__(self):
         self.enabled = True
         self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.
@@ -224,7 +222,7 @@ class ToolClassFGDC1(object):
         pass
 
 class ToolClassFGDC2(object):
-    """Implementation for Esri_Addin_addin.toolFGDC2 (Tool)"""
+    """Implementation for Esri_Addin_addin.tool.FGDC2 (Tool)"""
     def __init__(self):
         self.enabled = True
         self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.
@@ -256,7 +254,7 @@ class ToolClassFGDC2(object):
         pass
 
 class ToolClassFGDC3(object):
-    """Implementation for Esri_Addin_addin.toolFGDC3 (Tool)"""
+    """Implementation for Esri_Addin_addin.tool.FGDC3 (Tool)"""
     def __init__(self):
         self.enabled = True
         self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.

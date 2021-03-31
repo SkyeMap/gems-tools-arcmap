@@ -1,5 +1,9 @@
 import arcpy
 import pythonaddins
+import os
+
+relPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+toolbox = relPath + r"\GeMS_ToolsArc105.tbx"
 
 class ButtonClassAtttributeByKeyValue(object):
     """Implementation for Esri_Addin_addin.button.AtttributeByKeyValue (Button)"""
@@ -7,7 +11,7 @@ class ButtonClassAtttributeByKeyValue(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "AttributeByKeyValues")
 
 class ButtonClassCompactBackup(object):
     """Implementation for Esri_Addin_addin.button.CompactBackup (Button)"""

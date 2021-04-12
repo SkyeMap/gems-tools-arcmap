@@ -14,14 +14,13 @@ class ButtonClassAtttributeByKeyValue(object):
     def onClick(self):
         pythonaddins.GPToolDialog(toolbox, "AttributeByKeyValues")
 
-
 class ButtonClassCompactBackup(object):
     """Implementation for Esri_Addin_addin.buttonCompactBackup (Button)"""
     def __init__(self):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "CompactAndBackup")
 
 class ButtonClassCreateNewDatabase(object):
     """Implementation for Esri_Addin_addin.buttonCreateNewDatabase (Button)"""
@@ -29,7 +28,7 @@ class ButtonClassCreateNewDatabase(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "CreateDatabase")
 
 class ButtonClassDMUDocx(object):
     """Implementation for Esri_Addin_addin.buttonDMUDocx (Button)"""
@@ -37,7 +36,7 @@ class ButtonClassDMUDocx(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "DMUtoDocx")
 
 class ButtonClassDeplanarizeCAF(object):
     """Implementation for Esri_Addin_addin.buttonDeplanarizeCAF (Button)"""
@@ -45,7 +44,7 @@ class ButtonClassDeplanarizeCAF(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "Deplanarize")
 
 class ButtonClassDocxDMU(object):
     """Implementation for Esri_Addin_addin.buttonDocxToDMU (Button)"""
@@ -53,7 +52,31 @@ class ButtonClassDocxDMU(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "DocxToDMU")
+
+class ButtonClassFGDC1(object):
+    """Implementation for Esri_Addin_addin.buttonFGDC1 (Button)"""
+    def __init__(self):
+        self.enabled = True
+        self.checked = False
+    def onClick(self):
+        pythonaddins.GPToolDialog(toolbox, "Metadata-FGDC1")
+
+class ButtonClassFGDC2(object):
+    """Implementation for Esri_Addin_addin.buttonFGDC2 (Button)"""
+    def __init__(self):
+        self.enabled = True
+        self.checked = False
+    def onClick(self):
+        pythonaddins.GPToolDialog(toolbox, "MetadataFGDC-2")
+
+class ButtonClassFGDC3(object):
+    """Implementation for Esri_Addin_addin.buttonFGDC3 (Button)"""
+    def __init__(self):
+        self.enabled = True
+        self.checked = False
+    def onClick(self):
+        pythonaddins.GPToolDialog(toolbox, "FGDC-3")
 
 class ButtonClassFixStrings(object):
     """Implementation for Esri_Addin_addin.buttonFixStrings (Button)"""
@@ -61,7 +84,7 @@ class ButtonClassFixStrings(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "FixStrings")
 
 class ButtonClassGeologicNamesCheck(object):
     """Implementation for Esri_Addin_addin.buttonGeologicNamesCheck (Button)"""
@@ -69,7 +92,7 @@ class ButtonClassGeologicNamesCheck(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "GeologicNamesCheck")
 
 class ButtonClassInclinationNumbers(object):
     """Implementation for Esri_Addin_addin.buttonInclinationNumbers (Button)"""
@@ -77,7 +100,7 @@ class ButtonClassInclinationNumbers(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "InclinationNumber")
 
 class ButtonClassMakePolygons(object):
     """Implementation for Esri_Addin_addin.buttonMakePolygons (Button)"""
@@ -85,7 +108,7 @@ class ButtonClassMakePolygons(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "MakePolys")
 
 class ButtonClassMakeTopology(object):
     """Implementation for Esri_Addin_addin.buttonMakeTopology (Button)"""
@@ -93,7 +116,7 @@ class ButtonClassMakeTopology(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "MakeTopology")
 
 class ButtonClassMapOutline(object):
     """Implementation for Esri_Addin_addin.buttonMapOutline (Button)"""
@@ -101,7 +124,7 @@ class ButtonClassMapOutline(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "MapOutline")
 
 class ButtonClassProjectMapData(object):
     """Implementation for Esri_Addin_addin.buttonProjectMapData (Button)"""
@@ -109,7 +132,7 @@ class ButtonClassProjectMapData(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "ProjectCrossSectionData")
 
 class ButtonClassProjectPoints(object):
     """Implementation for Esri_Addin_addin.buttonProjectPoints (Button)"""
@@ -117,7 +140,7 @@ class ButtonClassProjectPoints(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "ProjectPointsToCrossSection")
 
 class ButtonClassPurgeMetadata(object):
     """Implementation for Esri_Addin_addin.buttonPurgeMetadata (Button)"""
@@ -125,7 +148,7 @@ class ButtonClassPurgeMetadata(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "PurgeMetadata")
 
 class ButtonClassRelationshipClasses(object):
     """Implementation for Esri_Addin_addin.buttonRelationshipClasses (Button)"""
@@ -133,7 +156,7 @@ class ButtonClassRelationshipClasses(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "RelationshipClasses")
 
 class ButtonClassSetIDvalues(object):
     """Implementation for Esri_Addin_addin.buttonSetIDvalues (Button)"""
@@ -141,7 +164,7 @@ class ButtonClassSetIDvalues(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "SetIDvalues2")
 
 class ButtonClassSetPlotAtScaleValues(object):
     """Implementation for Esri_Addin_addin.buttonSetPlotAtScaleValues (Button)"""
@@ -149,7 +172,7 @@ class ButtonClassSetPlotAtScaleValues(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "SetPlotAtScales")
 
 class ButtonClassSetSymbolValues(object):
     """Implementation for Esri_Addin_addin.buttonSetSymbolValues (Button)"""
@@ -157,7 +180,7 @@ class ButtonClassSetSymbolValues(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "SetSymbols")
 
 class ButtonClassSymbolToRGB(object):
     """Implementation for Esri_Addin_addin.buttonSymbolToRGB (Button)"""
@@ -165,7 +188,7 @@ class ButtonClassSymbolToRGB(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "SetSymbols")
 
 class ButtonClassTopologyCheck(object):
     """Implementation for Esri_Addin_addin.buttonTopologyCheck (Button)"""
@@ -173,7 +196,7 @@ class ButtonClassTopologyCheck(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "TopologyCheck")
 
 class ButtonClassTranslateToShapefiles(object):
     """Implementation for Esri_Addin_addin.buttonTranslateToShapefiles (Button)"""
@@ -181,7 +204,7 @@ class ButtonClassTranslateToShapefiles(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "TranslateToShape")
 
 class ButtonClassValidateDatabase(object):
     """Implementation for Esri_Addin_addin.buttonValidateDatabase (Button)"""
@@ -189,100 +212,4 @@ class ButtonClassValidateDatabase(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
-
-class ToolClassFGDC1(object):
-    """Implementation for Esri_Addin_addin.toolFGDC1 (Tool)"""
-    def __init__(self):
-        self.enabled = True
-        self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.
-    def onMouseDown(self, x, y, button, shift):
-        pass
-    def onMouseDownMap(self, x, y, button, shift):
-        pass
-    def onMouseUp(self, x, y, button, shift):
-        pass
-    def onMouseUpMap(self, x, y, button, shift):
-        pass
-    def onMouseMove(self, x, y, button, shift):
-        pass
-    def onMouseMoveMap(self, x, y, button, shift):
-        pass
-    def onDblClick(self):
-        pass
-    def onKeyDown(self, keycode, shift):
-        pass
-    def onKeyUp(self, keycode, shift):
-        pass
-    def deactivate(self):
-        pass
-    def onCircle(self, circle_geometry):
-        pass
-    def onLine(self, line_geometry):
-        pass
-    def onRectangle(self, rectangle_geometry):
-        pass
-
-class ToolClassFGDC2(object):
-    """Implementation for Esri_Addin_addin.toolFGDC2 (Tool)"""
-    def __init__(self):
-        self.enabled = True
-        self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.
-    def onMouseDown(self, x, y, button, shift):
-        pass
-    def onMouseDownMap(self, x, y, button, shift):
-        pass
-    def onMouseUp(self, x, y, button, shift):
-        pass
-    def onMouseUpMap(self, x, y, button, shift):
-        pass
-    def onMouseMove(self, x, y, button, shift):
-        pass
-    def onMouseMoveMap(self, x, y, button, shift):
-        pass
-    def onDblClick(self):
-        pass
-    def onKeyDown(self, keycode, shift):
-        pass
-    def onKeyUp(self, keycode, shift):
-        pass
-    def deactivate(self):
-        pass
-    def onCircle(self, circle_geometry):
-        pass
-    def onLine(self, line_geometry):
-        pass
-    def onRectangle(self, rectangle_geometry):
-        pass
-
-class ToolClassFGDC3(object):
-    """Implementation for Esri_Addin_addin.toolFGDC3 (Tool)"""
-    def __init__(self):
-        self.enabled = True
-        self.shape = "NONE" # Can set to "Line", "Circle" or "Rectangle" for interactive shape drawing and to activate the onLine/Polygon/Circle event sinks.
-    def onMouseDown(self, x, y, button, shift):
-        pass
-    def onMouseDownMap(self, x, y, button, shift):
-        pass
-    def onMouseUp(self, x, y, button, shift):
-        pass
-    def onMouseUpMap(self, x, y, button, shift):
-        pass
-    def onMouseMove(self, x, y, button, shift):
-        pass
-    def onMouseMoveMap(self, x, y, button, shift):
-        pass
-    def onDblClick(self):
-        pass
-    def onKeyDown(self, keycode, shift):
-        pass
-    def onKeyUp(self, keycode, shift):
-        pass
-    def deactivate(self):
-        pass
-    def onCircle(self, circle_geometry):
-        pass
-    def onLine(self, line_geometry):
-        pass
-    def onRectangle(self, rectangle_geometry):
-        pass
+        pythonaddins.GPToolDialog(toolbox, "ValidateDatabase2")

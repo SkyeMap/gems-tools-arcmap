@@ -1,9 +1,14 @@
 import arcpy
 import pythonaddins
 import os
+# relPath = r"W:\DATABASE_MAPS\24K\SkyeTraining\GitHub\gems-tools-arcmap\Esri_Addin\Install"
+relPath = os.path.dirname(__file__)
+filePath = os.path.abspath(os.path.join(relPath,"../../"))
+toolbox = filePath + r"\GeMS_ToolsArc105.tbx"
 
 #relPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 #toolbox = relPath + r"\GeMS_ToolsArc105.tbx"
+
 toolbox = r"W:\DATABASE_MAPS\24K\SkyeTraining\GitHub\gems-tools-arcmap\GeMS_ToolsArc105.tbx"
 
 class ButtonClassAtttributeByKeyValue(object):

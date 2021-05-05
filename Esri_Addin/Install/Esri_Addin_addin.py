@@ -4,7 +4,7 @@ import os
 
 #relPath = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 #toolbox = relPath + r"\GeMS_ToolsArc105.tbx"
-toolbox = r"D:\GitHub\gems-tools-arcmap-forked\GeMS_ToolsArc105.tbx"
+toolbox = r"W:\DATABASE_MAPS\24K\SkyeTraining\GitHub\gems-tools-arcmap\GeMS_ToolsArc105.tbx"
 
 class ButtonClassAtttributeByKeyValue(object):
     """Implementation for Esri_Addin_addin.buttonAtttributeByKeyValue (Button)"""

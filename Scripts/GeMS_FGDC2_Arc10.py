@@ -5,11 +5,10 @@ import sys, os, os.path, arcpy, copy, imp
 from GeMS_utilityFunctions import *
 from GeMS_Definition import enumeratedValueDomainFieldList, rangeDomainDict, unrepresentableDomainDict, attribDict, entityDict, GeoMatConfDict
 from xml.dom.minidom import *
-import codecs
 
 debug = False
 
-versionString = 'GeMS_FGDC2_Arc10.py, version of 4 May 2021'
+versionString = 'GeMS_FGDC2_Arc10.py, version of 15 March 2021'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_FGDC2_Arc10.py'
 checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
@@ -454,10 +453,9 @@ def writeDomToFile(workDir,dom,fileName):
         addMsgAndPrint(arcpy.env.workspace)
         addMsgAndPrint('fileName='+fileName)
     addMsgAndPrint('    Writing XML to '+fileName)
-    
-    outxml = os.path.join(workDir, fileName)
-    with codecs.open(outxml, "w", encoding="utf-8", errors="xmlcharrefreplace") as out:
-        dom.writexml(out, encoding="utf-8")
+    outf = open(os.path.join(workDir,fileName),'w')
+    dom.writexml(outf)
+    outf.close()
 
 #####################################
 

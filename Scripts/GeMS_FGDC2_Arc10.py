@@ -11,7 +11,7 @@ debug = False
 
 versionString = 'GeMS_FGDC2_Arc10.py, version of 4 May 2021'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_FGDC2_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 addMsgAndPrint('  '+ versionString)
 if debug:

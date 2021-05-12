@@ -33,7 +33,7 @@ import copy
 
 versionString = 'GeMS_ValidateDatabase_Arc10.py, version of 8 March 2021'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_ValidateDatabase_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 debug = False
 

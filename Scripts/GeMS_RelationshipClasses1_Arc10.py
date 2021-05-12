@@ -12,7 +12,7 @@ import arcpy, sys
 from GeMS_utilityFunctions import *
 versionString = 'GeMS_RelationshipClasses1_Arc10.py, version of 21 April 2018'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_RelationshipClasses1_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 addMsgAndPrint(versionString)
 

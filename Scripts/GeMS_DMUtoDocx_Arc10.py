@@ -18,7 +18,7 @@ from docxModified import *
 
 versionString = 'GeMS_DMUtoDocx_Arc10.py, version of 2 September 2017'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_DMUtoDocx_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 addMsgAndPrint( versionString )
 

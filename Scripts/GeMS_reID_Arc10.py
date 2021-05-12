@@ -8,7 +8,7 @@ from GeMS_utilityFunctions import *
 
 versionString = 'GeMS_reID_Arc10.py, version of 10 February 2020'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_reID_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 # modified to not work on a copy of the input database. Backup first!
 # 15 Sept 2016: modified to, by default, not reset DataSource_ID values

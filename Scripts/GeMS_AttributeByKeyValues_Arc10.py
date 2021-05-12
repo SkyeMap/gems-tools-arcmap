@@ -19,7 +19,7 @@ from GeMS_utilityFunctions import *
 
 versionString = 'GeMS_AttributeByKeyValues_Arc10.py, version of 15 March 2021'
 rawurl = 'https://raw.githubusercontent.com/usgs/gems-tools-arcmap/master/Scripts/GeMS_AttributeByKeyValues_Arc10.py'
-checkVersion(versionString, rawurl, 'gems-tools-arcmap')
+#checkVersion(versionString, rawurl, 'gems-tools-arcmap')
 
 separator = '|'
 
